@@ -1,0 +1,38 @@
+diff -uNr gst-plugins-ugly-0.10.19.orig/ext/amrnb/amrnbdec.h gst-plugins-ugly-0.10.19/ext/amrnb/amrnbdec.h
+--- gst-plugins-ugly-0.10.19.orig/ext/amrnb/amrnbdec.h	2016-05-16 22:39:33.580713712 +0300
++++ gst-plugins-ugly-0.10.19/ext/amrnb/amrnbdec.h	2016-05-16 22:40:25.610138755 +0300
+@@ -22,7 +22,7 @@
+ 
+ #include <gst/gst.h>
+ #include <gst/audio/gstaudiodecoder.h>
+-#include <interf_dec.h>
++#include <opencore-amrnb/interf_dec.h>
+ 
+ G_BEGIN_DECLS
+ 
+diff -uNr gst-plugins-ugly-0.10.19.orig/ext/amrnb/amrnbenc.h gst-plugins-ugly-0.10.19/ext/amrnb/amrnbenc.h
+--- gst-plugins-ugly-0.10.19.orig/ext/amrnb/amrnbenc.h	2016-05-16 22:39:33.581713682 +0300
++++ gst-plugins-ugly-0.10.19/ext/amrnb/amrnbenc.h	2016-05-16 22:40:52.210333554 +0300
+@@ -21,7 +21,7 @@
+ #define __GST_AMRNBENC_H__
+ 
+ #include <gst/gst.h>
+-#include <interf_enc.h>
++#include <opencore-amrnb/interf_enc.h>
+ #include <gst/audio/gstaudioencoder.h>
+ 
+ G_BEGIN_DECLS
+diff -uNr gst-plugins-ugly-0.10.19.orig/ext/amrwbdec/amrwbdec.h gst-plugins-ugly-0.10.19/ext/amrwbdec/amrwbdec.h
+--- gst-plugins-ugly-0.10.19.orig/ext/amrwbdec/amrwbdec.h	2016-05-16 22:39:33.582713652 +0300
++++ gst-plugins-ugly-0.10.19/ext/amrwbdec/amrwbdec.h	2016-05-16 22:41:46.384693668 +0300
+@@ -22,8 +22,8 @@
+ 
+ #include <gst/gst.h>
+ #include <gst/audio/gstaudiodecoder.h>
+-#include <dec_if.h>
+-#include <if_rom.h>
++#include <opencore-amrwb/dec_if.h>
++#include <opencore-amrwb/if_rom.h>
+ 
+ G_BEGIN_DECLS
+ 
